@@ -1,13 +1,13 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://scott:tiger@localhost'
+
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return 'Hello world'
 
 
 if __name__ == '__main__':
