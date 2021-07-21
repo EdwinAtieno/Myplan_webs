@@ -5,9 +5,9 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/members')
 def hello_world():
-    return 'Hello world'
+    return {"members":["member1", "member2", "member3"]}
 
 
 if __name__ == '__main__':
