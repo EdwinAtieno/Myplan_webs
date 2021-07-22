@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/api', methods=['GET', 'POST'])
 def api():
-    return {"userid":1,"title":"flask application", "completed": False}
+    return {"userid":1,"title":"flask applications", "completed": False}
 
 
 if __name__ == '__main__':
